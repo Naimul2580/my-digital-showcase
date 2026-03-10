@@ -25,16 +25,18 @@ const HeroSection = () => {
             Skilled in designing RESTful APIs, authentication systems, and scalable client-server architecture.
           </p>
 
-          {/* Placeholder for profile image */}
+          {/* Profile image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="w-32 h-32 md:w-40 md:h-40 rounded-sm bg-card border border-border mb-10 flex items-center justify-center"
+            className="w-32 h-32 md:w-40 md:h-40 rounded-sm overflow-hidden border border-border mb-10"
           >
-            <span className="text-muted-foreground text-xs font-body tracking-wider uppercase">
-              Your Photo
-            </span>
+            <img
+              src="/hero.jpg"
+              alt="Naimul Islam"
+              className="w-full h-full object-cover"
+            />
           </motion.div>
 
           <div className="flex items-center gap-6">

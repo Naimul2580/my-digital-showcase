@@ -20,11 +20,13 @@ const AboutSection = () => {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-12"
         >
-          {/* Image placeholder */}
-          <div className="w-full aspect-[3/4] bg-background border border-border flex items-center justify-center">
-            <span className="text-muted-foreground text-xs font-body tracking-wider uppercase">
-              Your Photo
-            </span>
+          {/* Profile image */}
+          <div className="w-full aspect-[3/4] overflow-hidden border border-border">
+            <img
+              src="/hero.jpg"
+              alt="Naimul Islam"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div className="md:col-span-2 space-y-6">
